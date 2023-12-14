@@ -2,6 +2,8 @@ package br.edu.inf011.aval3.enunciado.model;
 
 import br.edu.inf011.aval3.visitor.Visitor;
 
+
+//QUESTÃO 2 - CONCRETE ELEMENT em um VISITOR
 public class CPF implements Documento{
 	
 	public String nome;
@@ -13,35 +15,6 @@ public class CPF implements Documento{
 		this.nome = nome;
 		this.numero = numero;
 	}
-
-
-//	@Override
-//	public String formatar() {
-//		StringBuilder fmt = new StringBuilder();
-//		fmt.append("CPF\n");
-//		fmt.append(this.nome + " - ");
-//		fmt.append(this.numero.substring(0, 3) + "." + 
-//				   this.numero.substring(3, 6) + "." +
-//				   this.numero.substring(6, 9) + "-" + 
-//				   this.numero.substring(9, 11));
-//		return fmt.toString();
-//	}
-//
-//
-//	@Override
-//	public boolean validar() {
-//	    this.numero.replace(".", "");
-//	    this.numero.replace("-", "");
-//		return this.numeroValido();
-//	}
-//
-//
-//	@Override
-//	public Integer pontuar() {
-//		// TODO Auto-generated method stub
-//		return 3;
-//	}
-	
 	
 	public boolean numeroValido() {
 	    int d1, d2;

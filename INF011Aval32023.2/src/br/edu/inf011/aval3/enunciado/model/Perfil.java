@@ -7,6 +7,8 @@ import java.util.stream.Stream;
 import br.edu.inf011.aval3.visitor.VisitorFormatar;
 import br.edu.inf011.aval3.visitor.VisitorValidar;
 
+
+//QUESTÃO 1 - PRODUCT em um BUILDER
 public class Perfil {
 	
 	private List<Documento> documentos;

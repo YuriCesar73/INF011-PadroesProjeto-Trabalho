@@ -5,9 +5,9 @@ import br.edu.inf011.aval3.enunciado.model.service.Classificador;
 import br.edu.inf011.aval3.enunciado.model.service.ClassificadorPerfil;
 import br.edu.inf011.aval3.enunciado.model.service.NivelPerfil;
 
+
+//QUESTÃO 3 - PROXY em um PROXY
 public class ClassificadorPerfilProxy implements Classificador {
-	
-	
 	private ClassificadorPerfil classificadorPerfil;
 	private String user;
 	private String password;

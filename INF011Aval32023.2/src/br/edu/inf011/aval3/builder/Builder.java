@@ -6,7 +6,7 @@ import br.edu.inf011.aval3.enunciado.model.EMail;
 import br.edu.inf011.aval3.enunciado.model.RG;
 
 
-//Questão 1 - BUILDER em um BUILDER
+//QUESTÃO 1 - BUILDER em um BUILDER
 public interface Builder {
 	
 	public void reset();

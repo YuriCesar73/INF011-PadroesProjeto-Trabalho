@@ -8,6 +8,9 @@ import br.edu.inf011.aval3.enunciado.model.CartaoCredito;
 import br.edu.inf011.aval3.enunciado.model.EMail;
 import br.edu.inf011.aval3.enunciado.model.RG;
 
+
+
+//QUESTÃO 2 - CONCRETEVISITOR em um VISITOR
 public class VisitorValidar implements Visitor {
 
 	@Override

@@ -10,6 +10,8 @@ import br.edu.inf011.aval3.visitor.VisitorPontuar;
 import br.edu.inf011.aval3.visitor.VisitorValidar;
 
 
+//QUESTÃO 3 - REALSUBJECT em um PROXY
+
 public class ClassificadorPerfil implements Classificador{
 	
 	private Perfil perfil;
