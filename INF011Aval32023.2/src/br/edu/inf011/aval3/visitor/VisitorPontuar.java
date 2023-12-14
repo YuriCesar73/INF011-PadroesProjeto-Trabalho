@@ -5,7 +5,7 @@ import br.edu.inf011.aval3.enunciado.model.CartaoCredito;
 import br.edu.inf011.aval3.enunciado.model.EMail;
 import br.edu.inf011.aval3.enunciado.model.RG;
 
-//QUESTÃO 2 - CONCRETEVISITOR em um VISITOR
+//QUESTÃO 2 - CONCRETE VISITOR em um VISITOR
 public class VisitorPontuar implements Visitor {
 
 	@Override

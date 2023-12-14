@@ -9,23 +9,19 @@ import br.edu.inf011.aval3.enunciado.model.service.NivelPerfil;
 //QUESTÃO 3 - PROXY em um PROXY
 public class ClassificadorPerfilProxy implements Classificador {
 	private ClassificadorPerfil classificadorPerfil;
-	private String user;
-	private String password;
-	
+	private boolean valido;
 	
 	public ClassificadorPerfilProxy(ClassificadorPerfil classificadorPerfil, String user, String password) {
 		this.classificadorPerfil = classificadorPerfil;
-		this.user = user;
-		this.password = password;
+		this.valido = validar(user, password);
 	}
 
 	@Override
 	public NivelPerfil nivel() {
-		if(this.validar(this.user, this.password)) {
-			return this.classificadorPerfil.nivel();
+		if(!this.valido) {
+			return NivelPerfil.DESCONHECIDO;
 		}
-		
-		return NivelPerfil.DESCONHECIDO;
+		return this.classificadorPerfil.nivel();
 	}
 
 	@Override

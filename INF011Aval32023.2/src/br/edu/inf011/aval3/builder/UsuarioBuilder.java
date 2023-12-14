@@ -3,6 +3,7 @@ package br.edu.inf011.aval3.builder;
 import java.util.LinkedList;
 import java.util.List;
 
+import br.edu.inf011.aval3.builder.exception.NomeInvalidoException;
 import br.edu.inf011.aval3.enunciado.model.CPF;
 import br.edu.inf011.aval3.enunciado.model.CartaoCredito;
 import br.edu.inf011.aval3.enunciado.model.Documento;
@@ -90,9 +91,9 @@ public class UsuarioBuilder implements Builder{
 	}
 
 	
-	public Perfil get() {
+	public Perfil get() throws NomeInvalidoException {
 		if(this.nome == null) {
-			//Exception
+			throw new NomeInvalidoException();
 		}
 		
 		this.pwd = (this.pwd == null) ? this.nome : this.pwd;

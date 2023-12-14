@@ -9,6 +9,8 @@ import br.edu.inf011.aval3.visitor.VisitorValidar;
 
 
 //QUEST√ÉO 1 - PRODUCT em um BUILDER
+
+//QUEST√O 2 - OBJECT STRUCTURE em um VISITOR
 public class Perfil {
 	
 	private List<Documento> documentos;

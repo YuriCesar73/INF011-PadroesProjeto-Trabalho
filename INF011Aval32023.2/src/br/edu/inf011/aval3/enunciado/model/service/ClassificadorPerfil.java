@@ -10,8 +10,9 @@ import br.edu.inf011.aval3.visitor.VisitorPontuar;
 import br.edu.inf011.aval3.visitor.VisitorValidar;
 
 
-//QUESTÃO 3 - REALSUBJECT em um PROXY
+//QUESTÃO 3 - REAL SUBJECT em um PROXY
 
+//QUEST�O 2 - CLIENTE em um VISITOR
 public class ClassificadorPerfil implements Classificador{
 	
 	private Perfil perfil;
@@ -19,9 +20,6 @@ public class ClassificadorPerfil implements Classificador{
 	public ClassificadorPerfil(Perfil perfil) {
 		this.perfil = perfil;
 	}
-	
-	
-	
 	
 	public NivelPerfil nivel() {
 		boolean hasCPF = false;
