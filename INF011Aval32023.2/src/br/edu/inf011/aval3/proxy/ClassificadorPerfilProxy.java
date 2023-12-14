@@ -9,16 +9,28 @@ public class ClassificadorPerfilProxy implements Classificador {
 	
 	
 	private ClassificadorPerfil classificadorPerfil;
+	private String user;
+	private String password;
+	
+	
+	public ClassificadorPerfilProxy(ClassificadorPerfil classificadorPerfil, String user, String password) {
+		this.classificadorPerfil = classificadorPerfil;
+		this.user = user;
+		this.password = password;
+	}
 
 	@Override
 	public NivelPerfil nivel() {
-		this.validar(null, null); //Chamar aqui para verificar se as credenciais estão corretas.
-		return null;
+		if(this.validar(this.user, this.password)) {
+			return this.classificadorPerfil.nivel();
+		}
+		
+		return NivelPerfil.DESCONHECIDO;
 	}
 
 	@Override
 	public Perfil getPerfil() {
-		return null;
+		return this.classificadorPerfil.getPerfil();
 	}
 	
 	private boolean validar(String user, String password) {
